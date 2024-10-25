@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crud
+    username:
+    password:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # ou create, create-drop, validate, dependendo do seu uso
+    show-sql: true # para visualizar as queries no log
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
